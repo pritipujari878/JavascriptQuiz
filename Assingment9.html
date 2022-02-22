@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment 9</title>
+    <style>
+        body{
+            background-color: purple;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>JAVASCRIPT QUIZ</h1>
+   <form name="quiz" id="quiz">
+       <div>
+           <p>1. What is the best programming language to learn in 2020?</p>
+           <p><input type="radio" name="question1" value="HTML">A. HTML</p>
+           <p><input type="radio" name="question1" value="Python">B. Python</p>
+           <p><input type="radio" name="question1" value="Javascript">C. Javascript</p>
+           <p><input type="radio" name="question1" value="Swift">D. Swift</p>
+       </div>
+
+       <div>
+        <p>2. What is the biggest country in the world?</p>
+        <p><input type="radio" name="question2" value="Russia">A. Russia</p>
+        <p><input type="radio" name="question2" value="America">B. America</p>
+        <p><input type="radio" name="question2" value="china">C. china</p>
+        <p><input type="radio" name="question2" value="Canada">D. Canada</p>
+    </div>
+    <div>
+        <p>3. What is the Capital Of China?</p>
+        <p><input type="radio" name="question3" value="Guanzhou">A. Guanzhou</p>
+        <p><input type="radio" name="question3" value="Nanjing">B. Nanjing</p>
+        <p><input type="radio" name="question3" value="Shanghai">C. Shanghai</p>
+        <p><input type="radio" name="question3" value="Beijing">D. Beijing</p>
+    </div>
+    <div>
+        <p>4. What is the biggest problem in the world now?</p>
+        <p><input type="radio" name="question4" value="Financial">A. Financial</p>
+        <p><input type="radio" name="question4" value="Coronavirus">B. Coronavirus</p>
+        <p><input type="radio" name="question4" value="Economical problem">C. Economical problem</p>
+        <p><input type="radio" name="question4" value="Their is no problm">D. Their is no problm</p>
+    </div>
+    <div>
+        <p>5. How many seasons are there in a year?</p>
+        <p><input type="radio" name="question5" value="1">A. 1</p>
+        <p><input type="radio" name="question5" value="2">B. 2</p>
+        <p><input type="radio" name="question5" value="3">C. 3</p>
+        <p><input type="radio" name="question5" value="4">D. 4</p>
+    </div>
+
+       <input type="button" value="I'M done" onclick="check()">
+       </form>
+
+       <script type="text/javascript">
+           function check(){
+               var c=0;
+               var q1=document.quiz.question1.value;
+               var q2=document.quiz.question2.value;
+               var q3=document.quiz.question3.value;
+               var q4=document.quiz.question4.value;
+               var q5=document.quiz.question5.value;
+               if(q1=="Javascript"){c++}
+               if(q2=="Russia"){c++}
+               if(q3=="Beijing"){c++}
+               if(q4=="Coronavirus"){c++}
+               if(q5=="4"){c++}
+               document.write(c);
+           }
+       </script>
+</body>
+</html>
